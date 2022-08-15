@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+*{
+    margin : 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    width: 100%;
+    height: 68px;
+    background-color: rgb(255, 255, 255);
+    line-height: 75px;
+    padding: 0px 100px;
+    position: fixed;
+    z-index: 1;
+}
+nav .logo p{
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(17, 215, 17);
+    letter-spacing: 2.5px;
+}
+nav ul{
+    float: right;
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding : 0px 32px;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: rgb(17, 215, 17);
+    text-decoration: underline;
+}
+/* HOME SECTION */
+#home{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url("./images/home-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#home .home_content h1{
+    font-size: 48px;
+    font-weight: bold;
+    color: rgb(17, 215, 17);
+    letter-spacing: 2.5px;   
+    margin-bottom: 30px;
+}
+#home .home_content p{
+    width: 600px;
+    height: 190px;
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+}
+#home .home_content button{
+    width: 180px;
+    height: 50px;
+    background-color: rgb(17, 215, 17);
+    border: 1px rgb(17, 215, 17) solid;
+}
+.home_content button a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+#home .home_content button:hover{
+    background-color: rgb(90, 253, 36);
+    border-color: rgb(90, 253, 36);
+}
+
+/* CATEGORIES SECTION */
+.category h1{
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: rgb(17, 215, 17);
+    margin-top: 20px;
+}
+.category .category_content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.category .category_content .category_card{
+    border: 1px rgb(220, 215, 215) solid;
+    text-align: center;
+}
+.category .category_content .category_card i{
+    color: yellow;
+    font-size: 20px;
+    margin-bottom: 13px;
+    margin-top: 10px;
+}
+.category .category_content .category_card span{
+    font-size: 17px;
+}
+.category .category_content .category_card h4{
+    font-size: 20px;
+}
+.category .category_content .category_card button{
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    background-color: white;
+    border: 1px black solid;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+.category .category_content .category_card button:hover{
+    background-color: rgb(17, 215, 17);
+    border-color: rgb(17, 215, 17);
+    transition: all 0.5s;
+}
+
+/* PRODUCTS SECTION */
+.product h1{
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(17, 215, 17);
+    letter-spacing: 2.5px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+.product_card{
+    text-align: center;
+    border: 1px rgb(220, 215, 215) solid;
+}
+.card__value p{
+    font-size: 18px;
+}
+.product_card h4{
+    color: rgb(17, 215, 17);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.product_card .card__star i{
+    font-size: 17px;
+    color: yellow;
+    margin-bottom: 10px;
+}
+.product_card .card__icons i{
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    padding: 5px;
+    margin-top: 3px;
+    border: 1px rgb(220, 215, 215) solid;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.product_first{
+    display: flex;
+    justify-content: space-around;
+}
+.product_second{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.product_card figure img{
+    width: 200px;
+    height: 200px;
+}
+/* ABOUT SECTION */
+.about h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(17, 215, 17);
+    font-size: 35px;
+    letter-spacing: 2.5px;
+}
+.about h3{
+    color: black;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+.about_section {
+    display: flex;
+    justify-content: space-around;   
+}
+.about_section .about_img figure img{
+    width: 650px;
+    height: 500px;
+}
+.about_txt button{
+    margin-top: 20px;
+    width: 130px;
+    height: 50px;
+    border : 1px black solid;
+    border-radius: 3px;
+    background-color: white;
+}
+.about_txt button a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    font-size: 17px;
+}
+.about_txt button:hover{
+    background-color: rgb(17, 215, 17);
+    border-color: rgb(17, 215, 17);
+    transition: all 0.5s;
+}
+/* ORDER SECTION */
+.order h1{
+    color: rgb(17, 215, 17);
+    font-size: 35px;
+    text-align: center;
+    letter-spacing: 2.5px;
+}
+.order_form h2{
+    color: rgb(17, 215, 17);
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 15px;
+    letter-spacing: 2.5px;
+}
+.order{
+    background-image: url("./images/depositphotos_278089790-stock-photo-fresh-fruits-vegetables-white-wooden.jpg");
+    background-repeat: no-repeat;
+    background-size: inherit;
+    width: 100%;
+    height: 700px;
+    margin-top: 50px;
+}
+.order .order_form{
+    margin-right: 200px;
+    margin-top: 100px;
+    float: right;
+}
+.order .order_form input{
+    width: 500px;
+    height: 40px;
+    border-radius: 3px;
+}
+.order .order_form button{
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+    border: 1px black solid;
+    border-radius:3px ;
+}
+.order .order_form button:hover{
+    background-color: rgb(17, 215, 17);
+    border-color: rgb(17, 215, 17);
+    transition: all 0.4s;
+}
+
+/* SERVICE SECTION */
+#service h1{
+    font-size: 35px;
+    color: rgb(17, 215, 17);
+    text-align: center;
+    letter-spacing: 2.5px;
+}
+.service_content .service_first{
+    display: flex;
+    justify-content: space-around;
+}
+.service_content .service_second{
+    display: flex;
+    justify-content: space-around;
+}
+.service_content .service_card{
+    margin-top: 30px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+.service_content .service_card i{
+    font-size: 35px;
+}
+.service_content .service_card h6{
+    font-size: 20px;
+}
+.service_content .service_card p{
+    font-size: 15px;
+    margin-top: 10px;
+}
+/* REVIEW SECTION */
+#review h1{
+    font-size: 35px;
+    letter-spacing: 2.5px;
+    color:rgb(17, 215, 17) ;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.review__card {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.review__card img{
+    border-radius: 50%;
+}
+.review__card p{
+    width: 280px;
+    height: 200px;
+}
+.review__card h3{
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+/*FOOTER SECTION*/
+.footer{
+    background-image: url("./images/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.footer .footer_logo h1{
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    font-size: 30px;
+    color: rgb(17, 215, 17);
+    margin-bottom: 15px;
+}
+.footer .footer_logo p{
+    width: 350px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+.social_media_icons{
+    display: flex;
+}
+.footer .social_media_icons i{
+    font-size: 30px;
+    justify-content: space-around;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.footer_contact h1{
+    font-size: 25px;
+    margin-bottom: 15px;
+    letter-spacing: 2.5px;
+    color: rgb(17, 215, 17);
+}
+.footer_contact i{
+    font-size: 17px;
+    color: black;
+    margin-right: 8px;
+}
+.footer_links h1{
+    font-size: 25px;
+    margin-bottom: 15px;
+    letter-spacing: 2.5px;
+    color: rgb(17, 215, 17);
+}
+.footer_links p i{
+    font-size: 17px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+.footer_newsletter h1{
+    font-size: 25px;
+    margin-bottom: 15px;
+    letter-spacing: 2.5px;
+    color: rgb(17, 215, 17);
+}
+.footer_newsletter p{
+    color: rgb(87, 87, 87);
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.footer_newsletter input{
+    width: 200px;
+    height: 30px;
+}
+.footer_newsletter button{
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(17, 215, 17);
+    border: 1px rgb(17, 215, 17) solid;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 3px;
+}
+.footer_newsletter button:hover{
+    background-color: rgb(72, 232, 36);
+    border-color: rgb(72, 232, 36);
+}
